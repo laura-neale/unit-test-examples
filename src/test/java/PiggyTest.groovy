@@ -7,6 +7,9 @@ import spock.lang.Unroll
 
 import static groovy.test.GroovyAssert.shouldFail
 
+/*
+A simple spock test of a json deserialization test using data tables to repeat similar scenarios
+ */
 @Title("Tests deserialization of a piggy")
 class PiggyTest extends Specification {
 
