@@ -1,0 +1,2 @@
+This project gives an example of unit tests written in groovy using the Spock framework.
+To view a full unit test report, run the unit tests using and IDE or `mvn clean test`, and open the html files in the `build` directory
