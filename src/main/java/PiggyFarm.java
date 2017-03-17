@@ -9,7 +9,12 @@ public class PiggyFarm {
         this.piggies = piggies;
     }
 
-    public Piggy getSmallestPiggy() {
+    public void giveSmallestPigAward() {
+        Piggy smallestPiggy = getSmallestPiggy();
+        smallestPiggy.giveAward();
+    }
+
+    private Piggy getSmallestPiggy() {
         return piggies.stream()
                 .reduce((a,b) -> getSmallerPiggy(a, b))
                 .orElseThrow(() -> new NoSuchElementException("No piggies found"));

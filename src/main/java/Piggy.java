@@ -21,4 +21,8 @@ public class Piggy {
         return weight;
     }
 
+    public void giveAward() {
+        System.out.println(String.format("%s looks proud!"));
+    }
+
 }
