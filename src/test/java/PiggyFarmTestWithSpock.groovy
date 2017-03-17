@@ -3,7 +3,7 @@ import spock.lang.Specification;
 /*
 Simple test using spock mocking framework
  */
-class PiggyFarmTest extends Specification {
+class PiggyFarmTestWithSpock extends Specification {
 
     //pigs can only be constructed by deserializing a string
     //but this unit test shouldn't be concerned with whether the deserialization works

@@ -15,7 +15,7 @@ class PiggyTest extends Specification {
 
     def mapper = new ObjectMapper()
 
-    @Unroll
+    @Unroll //unroll lets the comments and names be parameterized with data table values to make reports more readable and precise
     "test deserializing valid piggy names"() {
         given: "a valid json with name #name"
         def json = "{\"name\": ${inputName}}"
@@ -27,6 +27,7 @@ class PiggyTest extends Specification {
         piggy.name == output
 
         where:
+        //data tables can be used to repeat similar scenarios with slightly different inputs and outputs
         inputName               | output
         "\"sir pigglesworth\""  | "sir pigglesworth"
         "\"\""                  | Piggy.DEFAULT_NAME
